@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeScreen</title>
+    <link rel="stylesheet" href="user-panel.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <div class="user-info">
+    <span class="user-icon"><i class="fas fa-user-circle"></i></span>
+    <span class="user-name">Logged in as Xyz user</span>
+</div>
+
+    <div class='container'>
+        <img src="assets/logo.jpg" alt="Logo" class="logo">
+        <form (ngSubmit)="submit()">
+        <h2>Home Screen</h2>
+        <div class="content">
+            <div class="left-panel">
+                <div class="leftside">
+                    <div class="form-group left">
+                        <label for="fy">FY:</label>
+                        <select id="fy">
+                            <option value="fy2021">FY 2021</option>
+                            <option value="fy2022">FY 2022</option>
+                            <option value="fy2023">FY 2023</option>
+                        </select>
+                    </div>
+                    <div class="form-group left">
+                        <label for="userName">User Login Name:</label>
+                        <input type="text" id="userName" required>
+                    </div>
+                  </div>
+                  <div class="gr">
+                    <button (click)="onClientSelection()">General Reports</button>
+                  </div>
+                   
+                    <div >
+                        <h3>General Report</h3>
+                        <table>
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Client</th>
+              <th>File No</th>
+              <th>Transaction Date</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1001</td>
+              <td>Client A</td>
+              <td>123456</td>
+              <td>2022-01-01</td>
+              <td>$5000</td>
+            </tr>
+            <tr>
+              <td>1002</td>
+              <td>Client B</td>
+              <td>789012</td>
+              <td>2022-02-15</td>
+              <td>$8000</td>
+            </tr>
+            <tr>
+              <td>1003</td>
+              <td>Client C</td>
+              <td>345678</td>
+              <td>2022-03-30</td>
+              <td>$10000</td>
+            </tr>
+            <tr>
+              <td>1004</td>
+              <td>Client A</td>
+              <td>901234</td>
+              <td>2022-04-15</td>
+              <td>$12000</td>
+            </tr>
+            <tr>
+              <td>1005</td>
+              <td>Client B</td>
+              <td>567890</td>
+              <td>2022-05-30</td>
+              <td>$15000</td>
+            </tr>
+            <tr>
+              <td>1006</td>
+              <td>Client C</td>
+              <td>234567</td>
+              <td>2022-06-15</td>
+              <td>$18000</td>
+            </tr>
+            <tr>
+              <td>1007</td>
+              <td>Client A</td>
+              <td>890123</td>
+              <td>2022-07-30</td>
+              <td>$20000</td>
+            </tr>
+            <tr>
+              <td>1008</td>
+              <td>Client B</td>
+              <td>456789</td>
+              <td>2022-08-15</td>
+              <td>$22000</td>
+            </tr>
+            <tr>
+              <td>1009</td>
+              <td>Client C</td>
+              <td>123456</td>
+              <td>2022-09-30</td>
+              <td>$25000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>Client A</td>
+              <td>789012</td>
+              <td>2022-10-15</td>
+              <td>$28000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+    </div>
+</div>
+<div class="right-panel">
+<label for="client">Client Selection:</label>
+<select id="client" [(ngModel)]="client">
+    <option value="CNA">Client A</option>
+    <option value="CCI">Client B</option>
+    <option value="CCI">Client C</option>
+    <!-- Add more options as needed -->
+</select>
+<div class="form-group">
+    <label for="clientsfileno">Clients.File No</label>
+    <input type="number" id="clientsfileno" required>
+</div>
+<div class="form-group">
+    <label for="clientsname">CLIENTS.CNAME</label>
+    <input type="text" id="clientsname" required>
+</div>
+<div class="form-group">
+    <label for="clientscity">CLIENTS.CCITY</label>
+    <input type='text' id='clientscity' required>
+</div>
+<div class="form-group">
+    <label for="clientstype">CLIENTS.CTYPE</label>
+    <input type="text" id='clientstype' required>
+</div>
+<div class="form-group">
+    <label for="parentname">PARENT NAME</label>
+    <input type="text" id="parentname" required>
+</div>
+<div class="form-group">
+    <button type="submit" class="link">Submit</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+      

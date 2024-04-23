@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="client-panel.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="user-info">
+        <span class="user-icon"><i class="fas fa-user-circle"></i></span>
+        <span class="user-name">Logged in as Xyz user</span>
+    </div>
+
+    <div class="container">
+        <img src="assets/logo.jpg" alt="Logo" class="logo">
+        <form>
+            <h2>Client Dashboard</h2>
+            <div class="left-content">
+            <div class="leftside">
+                <div class="form-group">
+                    <label for="fy">FY:</label>
+                    <select id="fy">
+                        <option value="fy2021">FY 2021</option>
+                        <option value="fy2022">FY 2022</option>
+                        <option value="fy2023">FY 2023</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="userName">User Login Name:</label>
+                    <input type="text" id="userName" required>
+                </div> 
+            </div>
+                <div class="container">
+                    <header>
+                        <h1>Group List</h1>
+                        <p>Client Name: <strong>Example Client</strong> (City: <span>New York</span>)</p>
+                    </header>
+                    <div class="group-list">
+                        <ul>
+                            <li>Main Parent
+                                <ul>
+                                    <li>Branch 1</li>
+                                    <li>Branch 2</li>
+                                    <li>Branch 3</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="clientname">Client Name</label>
+                    <input type="text" id="clientname" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateoflastupdate">Date of Last Update</label>
+                    <input type="date" id="dateoflastupdate" placeholder="Max(DATE) where ACTIVITY = 'SAVE' or 'DELETE' or 'PRINT'" value="2022-03-12">
+                    <span class="tooltip">Max date based on the last 'Save', 'Delete', or 'Print' action</span>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="form-group">
+                    <label for="dataentry">Data Entry (Entry Screens)</label>
+                    <select id="dataentry">
+                        <option>Receipts & Payments A/c</option>
+                        <option>Journal Entries</option>
+                        <option>School Furniture & Equipment (School)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reportpreparation">Report Preparation</label>
+                    <select id="reportpreparation">
+                        <option>Audit Report Details</option>
+                        <optgroup label="Individual">
+                            <option>Individual</option>
+                            <option>Consolidated (Trust or FC)</option>
+                        </optgroup>
+                        <option>Schedule IX-C </option>
+                        <option>ITR Computation </option>
+                        <optgroup label="Signing Information">
+                            <option>Individual</option>
+                            <option>Consolidated (Trust or FC)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reportpreview">Report Preview</label>
+                    <select id="reportpreview">
+                        <option>Trial Balance</option>
+                        <option>Intra-Group Transactions</option>
+                        <optgroup label="Balance Sheet">
+                            <option>Individual</option>
+                            <option>Consolidated (Trust or FC)</option>
+                        </optgroup>
+                        <optgroup label="Income & Expenditure A/c">
+                            <option>Individual</option>
+                            <option>Consolidated (Trust or FC)</option>
+                        </optgroup>
+                        <option>School Memo (School)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reportprint">Report Print</label>
+                    <select id="reportprint">
+                        <optgroup label="Audit Report">
+                            <option>Individual</option>
+                            <option>Consolidated (Trust or FC)</option>
+                        </optgroup>
+                        <option>FC Report </option>
+                        <option>School Memo (School)</option>
+                        <option>ITR Computation</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

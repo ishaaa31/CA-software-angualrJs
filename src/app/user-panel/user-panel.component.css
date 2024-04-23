@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e7e1e1; /* Very light grey background */
+}
+.user-info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.user-icon i {
+  border-radius: 50%;
+  background-color: #007bff; /* Adjust as needed */
+  padding: 5px;
+  color: white;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.left-panel, .right-panel {
+  flex-grow: 1;
+  background-color: #e7e1e1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 40px; /* Adjust as needed */
+  max-width: 70px;
+}
+
+form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gr {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  background-color: #28a745;
+}
+
+button:hover, .link:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left {
+  width: 35%;
+}

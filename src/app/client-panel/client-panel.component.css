@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e7e1e1; /* Very light grey background */
+}
+
+.user-info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.user-icon i {
+  border-radius: 50%;
+  background-color: #007bff; /* Adjust as needed */
+  padding: 5px;
+  color: white;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0px;
+  padding: 2px;
+  background-color: #e7e1e1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333; /* Dark text color */
+}
+
+p {
+  font-size: 16px;
+  color: #555; /* Medium grey color */
+}
+
+strong {
+  font-weight: bold;
+}
+
+span {
+  color: #007bff; /* Blue color for links */
+}
+
+.group-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.group-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.group-list li ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.group-list li ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666; /* Dark grey color */
+}
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 40px; /* Adjust as needed */
+  max-width: 70px;
+}
+
+form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group select option {
+  padding: 5px 10px;
+}
+
+.form-group select optgroup {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.tooltip {
+  position: fixed;
+  display: inline-block;
+  margin-left: 5px; 
+  z-index: 9999;
+}
+
+.tooltip::after {
+  content: "?";
+  position: fixed;
+  display: inline-block;
+  top: 50%;
+  right: -15px; /* Adjust as needed */
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.tooltip:hover::before {
+  content: "Max date based on the last 'Save', 'Delete', or 'Print' action";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Adjust as needed */
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+
+/* CSS for Data Entry box */
+#dataentry {
+  background-color: #f8edb1; 
+}
+
+/* CSS for Report Preparation box */
+#reportpreparation {
+  background-color: #f5d6e5; 
+}
+
+/* CSS for Report Preview box */
+#reportpreview {
+  background-color: #abe2f8; 
+}
+
+/* CSS for Report Print box */
+#reportprint {
+  background-color: #c5f7c5; 
+}
+
+.left-content,
+.right-content {
+  flex-grow: 1;
+  width: 49%; /* Adjusted to distribute content evenly */
+  background-color: #e7e1e1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  display: inline-block; /* Ensure the elements are displayed inline-block */
+  vertical-align: top; /* Align elements to the top */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
